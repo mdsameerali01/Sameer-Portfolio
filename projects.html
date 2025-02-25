@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+     .project1    h2 {
+    color: darkgoldenrod;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px; /* Adds space between text and underline */
+    border-bottom: 3px solid darkgoldenrod; /* Full-width underline */
+    width: 80%; /* Adjust width if needed */
+    margin: auto;
+}
+
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: #1c1c1c;
+            width: 100%;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+            position: relative;
+            text-align: left;
+            transition: transform 0.3s;
+            height: 350px;
+            font-size: 18px;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .open-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: darkgoldenrod;
+            color: black;
+            padding: 7px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .project-card h3 {
+            color: darkgoldenrod;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-card ul {
+            padding-left: 20px;
+        }
+
+        .project-card ul li {
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            background-color: darkgoldenrod;
+            color: black;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        /* Hide extra projects initially */
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .project-card {
+                width: 90%;
+                margin: auto;
+                padding: 20px;
+                height: auto;
+                font-size: 16px;
+            }
+
+            .project-card h3 {
+                font-size: 18px;
+            }
+
+            .open-btn {
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+ <div class="project1">
+    <h2>My Projects</h2>
+    
+    <div class="project-container" id="project-container">
+        <!-- Work Mate Project -->
+        <div class="project-card">
+            <button class="open-btn" onclick="window.open('#', '_blank')">OPEN</button>
+            <h3>Work-Mate (Full-Stack Development)</h3>
+            <p>A platform for connecting laborers with household job opportunities.</p>
+            <ul>
+                <li>Implemented authentication (JWT & OAuth2.0)</li>
+                <li>Integrated Razorpay for payments</li>
+                <li>Developed a responsive React frontend</li>
+                <li>Built a secure backend with Node.js & PostgreSQL</li>
+            </ul>
+        </div>
+
+        <!-- Alternative Routes Project -->
+        <div class="project-card">
+            <button class="open-btn" onclick="window.open('#', '_blank')">OPEN</button>
+            <h3>Alternative Routes Finder</h3>
+            <p>A system to find the best possible routes with traffic considerations.</p>
+            <ul>
+                <li>Implemented Dijkstra & A* algorithms</li>
+                <li>Used Google Maps API for visualization</li>
+                <li>Designed a real-time traffic-based path adjustment system</li>
+                <li>Optimized database queries for fast route retrieval</li>
+            </ul>
+        </div>
+
+        <!-- Extra Projects (Hidden Initially) -->
+        <div class="project-card hidden" id="movie-project">
+            <button class="open-btn" onclick="window.open('#', '_blank')">OPEN</button>
+            <h3>Movie Recommendation System</h3>
+            <p>A smart movie recommender using content filtering.</p>
+            <ul>
+                <li>Used collaborative filtering for personalized recommendations</li>
+                <li>Developed in Python with Flask & Pandas</li>
+                <li>Integrated TMDb API for movie data</li>
+                <li>Built an interactive UI with React.js</li>
+            </ul>
+        </div>
+
+        <div class="project-card hidden" id="ci-cd-project">
+            <button class="open-btn" onclick="window.open('https://your-deployment-link.com', '_blank')">OPEN</button>
+            <h3>CI/CD Pipeline for Web Application</h3>
+            <p>A fully automated CI/CD pipeline for seamless deployment.</p>
+            <ul>
+                <li>Automated build, test, and deployment using GitHub Actions</li>
+                <li>Containerized application with Docker</li>
+                <li>Orchestrated deployment using Kubernetes</li>
+                <li>Deployed on AWS with zero downtime updates</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- See More & See Less Buttons -->
+    <button class="btn" id="see-more-btn">See More Projects</button>
+    <button class="btn hidden" id="see-less-btn">See Less Projects</button>
+</div>
+    <script>
+        document.getElementById("see-more-btn").addEventListener("click", function() {
+            document.getElementById("movie-project").classList.remove("hidden");
+            document.getElementById("ci-cd-project").classList.remove("hidden");
+            document.getElementById("see-more-btn").classList.add("hidden");
+            document.getElementById("see-less-btn").classList.remove("hidden");
+        });
+
+        document.getElementById("see-less-btn").addEventListener("click", function() {
+            document.getElementById("movie-project").classList.add("hidden");
+            document.getElementById("ci-cd-project").classList.add("hidden");
+            document.getElementById("see-more-btn").classList.remove("hidden");
+            document.getElementById("see-less-btn").classList.add("hidden");
+        });
+    </script>
+
+</body>
+</html>

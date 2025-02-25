@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sameer Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      /*======================================
+//--//-->   ABOUT
+======================================*/
+.project1{
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 120px;
+}
+.project1    h2 {
+    color: darkgoldenrod;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px; /* Adds space between text and underline */
+    border-bottom: 3px solid darkgoldenrod; /* Full-width underline */
+    width: 80%; /* Adjust width if needed */
+    margin: auto;
+}
+
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            padding: 20px;
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: #1c1c1c;
+            width: 100%;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+            position: relative;
+            text-align: left;
+            transition: transform 0.3s;
+            height: 770px;
+            font-size: 17px;
+            
+        }
+        
+        .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-stack span {
+    /* background-color: darkgoldenrod; */
+  background-color: #e6a70e;
+  color: black;
+  padding: 3px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 50px;
+}
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .open-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: darkgoldenrod;
+            color: black;
+            padding: 7px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .project-card h3 {
+            color: darkgoldenrod;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+     
+        .project-card ul {
+            padding-left: 20px;
+        }
+
+        .project-card ul li {
+            margin-bottom: 5px;
+        }
+
+        .btn5 {
+            background-color: darkgoldenrod;
+            color: black;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        /* Hide extra projects initially */
+        .hidden {
+            display: none;
+        }
+        .contsam{
+          position: relative;
+          top: 300px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .project-card {
+                width: 90%;
+                margin: auto;
+                padding: 20px;
+                height: auto;
+                font-size: 16px;
+            }
+
+            .project-card h3 {
+                font-size: 18px;
+            }
+
+            .open-btn {
+              font-size: 11px;
+              padding: 2px 4px;
+              position: relative;
+              left: 170px;
+              top: -8px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+        }
+     
+
+   .project-card h4{
+    color: #ff7800;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+   
+
+.about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
+
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
+      .js-fullheight {
+  height: auto !important;
+  min-height: 100vh; /* Forces full-screen height */
+    }
+    .one-third {
+  width: 100%;
+  min-height: 700px; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+      .skill-mf .progress {
+        /* background-color: #cde1f8; */
+        margin: 0.5rem 0 1.2rem;
+        border-radius: 0;
+        height: 0.7rem;
+      }
+
+      .skill-mf .progress .progress-bar {
+        height: 0.7rem;
+        background-color: #ffbd39;
+      }
+
+      /* Animation styles */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      #typing-animation:before {
+        content: "";
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+
+        to {
+          width: 0;
+        }
+      }
+
+      /* project image zoom effect */
+
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+
+      @media screen and (orientation: portrait) {
+        body {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+
+        .order-md-last {
+          visibility: hidden;
+        }
+
+        .about-img img {
+          content: url("images/mypic.jpeg");
+        }
+      }
+    </style>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Md Sameer Ali</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+          Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">
+                <span>Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-section" class="nav-link">
+                <span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume-section" class="nav-link">
+                <span>Resume</span></a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">
+                <span>Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#send-message" class="nav-link">
+                <span>Message me</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home-section" class="hero">
+      <div class="home-slider  owl-carousel">
+        <div class="slider-item ">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/mypic.jpeg); width: 580px; height: 700px; background-size: cover; background-position: center; position: relative; top: 60px; right: -90px;">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm
+                    <span>Sameer Ali</span></h1>
+
+                  <!-- Element to contain animated typing -->
+                  <span id="typing-animation"></span>
+
+                  <script>
+                    // Initialize the typing animation
+                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                    // Create an array of typing text
+                    const typingTexts = ['Software Developer     ', 'FullStack Developer     ', 'Software Engineer    '];
+
+                    // Create a function to display the typing animation for a given text
+                    function playTypingAnimation(text) {
+                      // Loop through each character and add it to the element
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 100); // Decreased delay to speed up the typing animation
+                      }
+
+                      // Once the animation is complete, reset the text and start over
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 100); // Adjusted delay accordingly
+                    }
+
+                  
+                    playTypingAnimation(typingTexts[0]);
+                  </script><br><br>
+                 
+                  <p>
+                    <a href="https://github.com/mdsameerali01" class="btn btn-primary py-3 px-4">My GitHub</a>
+                    <a href="https://www.linkedin.com/in/md-sameer-ali-1619062b8/" class="btn btn-white btn-outline-white py-3 px-4">My Linkedin</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+           
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="images/aboutme.jpeg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                 
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p>
+                          <span class="title-s">Name:
+                          </span>
+                          <span>Md Sameer Ali</span></p>
+                        <p>
+                          <span class="title-s">Job Role:
+                          </span>
+                          <span>Software Engineer and Full Stack Developer</span></p>
+                        <p>
+                          <!-- <span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> <p> -->
+                          <span class="title-s">Address:
+                          </span>
+                          <span>Hyderabad, Telangana</span></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+                    <span>Full Stack Developer</span>
+                    <!-- <span class="pull-right">85%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>SQL</span>
+                    <!-- <span class="pull-right">95%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>C++</span>
+                    <!-- <span class="pull-right">85%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>DATA STRUCTURES</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>ALGORITHMS</span>
+                    <!-- <span class="pull-right">99%</span> -->
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>JAVA</span>
+                   
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+
+                  <p>I'm a passionate Full-Stack Developer with a strong foundation in building scalable web applications and seamless user experiences. With expertise in React.js, Node.js, PostgreSQL, and API development, I specialize in crafting efficient, high-performing solutions. Beyond coding, I thrive on problem-solving, optimizing systems, and staying updated with the latest tech trends. Whether it's developing intuitive frontends or architecting robust backends, I bring a detail-oriented and innovative approach to every project. Currently, I'm seeking opportunities to contribute my skills to impactful projects and grow as a Software Engineer.</p>
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex">
+                      <span>Profile:</span>
+                      <span>Full-Stack Developer &amp; Software Engineer</span></li>
+                    <li class="d-flex">
+                      <span>Domain:</span>
+                      <span>Software Developement</span></li>
+                    <li class="d-flex">
+                      <span>Education:</span>
+                      <span>Bachelor of Technology</span></li>
+                    <li class="d-flex">
+                      <span>Language:</span>
+                      <span>English, Hindi, Telugu</span></li>
+                    <!-- <li class="d-flex"> <span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li> -->
+                    <li class="d-flex">
+                      <span>Other Skills:</span>
+                      <span>
+                       Observational skills, Creativity, Knowledge of art fundamentals, Technical proficiency, Communication skills, Time management, Adaptability &amp; Attention to detail</span></li>
+                    <li class="d-flex">
+                      <span>Interest:</span>
+                      <span>Traveling, Travel Photography, Teaching, Astrobiology</span></li>
+
+                  </ul>
+                </div>
+              </div>
+
+              <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="text">
+                  <!-- <p class="mb-4"> <span class="number" data-number="30">0</span> <span>+</span> <span>&nbsp; Projects completed</span> </p> -->
+                  <p>
+                    <a href="mailto:mdsameeraliece@gmail.com?subject=Job%20Opportunity&body=Hello%20Sameer,%20I%20would%20like%20to%20discuss%20a%20potential%20job%20opportunity%20with%20you." class="btn btn-primary py-3 px-3">Hire Me</a>
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>I am an experienced Full-Stack Developer with over 2+ years of hands-on experience in building scalable and secure web applications. I have worked extensively with React.js, Node.js, PostgreSQL, and API development, focusing on creating seamless user experiences and optimized backend systems. I have developed applications like Work Mate, integrating authentication, payment systems, and real-time features. Additionally, I have contributed to open-source projects, collaborated with developers globally, and built solutions that enhance performance and security. My expertise spans frontend UI development, backend logic implementation, and database optimization, making me well-equipped for challenging software development roles.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Hackathon Project (2nd Place - Educational Platform)</span>
+              <h2>Full-Stack Educational Platform </h2>
+              <span class="position">React.js, Node.js,ExpressJs, PostgreSQL</span>
+              <p class="mt-4">Developed a unified learning platform that integrates high school, intermediate, and graduation education for seamless access. Built using React.js, Node.js, and PostgreSQL, ensuring a structured and scalable architecture. Designed an intuitive UI for students and educators to access resources efficiently.
+                <ul>
+                  <li>Achieved 2nd place in a national-level hackathon.</li>
+                  <li>Used React.js (Frontend), Node.js (Backend), PostgreSQL (Database) for a scalable architecture.</li>
+                  <li>Designed a structured content system for easy access and navigation.</li>
+                  <li>Developed a unified learning platform that integrates high school, intermediate, and graduation education.</li>
+                </ul>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date"> Internship at IIT Mandi – AI & Robotics</span>
+              <h2>AI & Robotics Research Intern</h2>
+              <span class="position"> C++, ROS, LiDAR, GPS,  Arduino</span>
+              <p class="mt-4">Developed and optimized AI-powered Automated Guided Vehicles (AGVs) for industrial automation. Implemented computer vision & machine learning for real-time path planning, obstacle avoidance, and navigation. Used ROS, LiDAR, GPS, and embedded systems to enhance vehicle control and decision-making.
+                <ul>
+                  <li> Worked with ROS, LiDAR, GPS, and embedded systems to enhance vehicle control</li>
+                  <li>Researched and optimized AGV automation techniques, reducing human intervention in industrial environments.</li>
+                  <li>Integrated LiDAR and GPS sensors with ROS (Robot Operating System)</li>
+                  <li>Optimized AGV control systems </li>
+
+                </ul>
+              </p>
+            </div>
+
+            
+          </div>
+          
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Bachelor of Technology</span>
+              <h2>Electronics and Communication Engineering</h2>
+              <span class="position">Roorkee Institute of Technology</span>
+              <p class="mt-4">Graduating in 2025 , Grade: First class distinction.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Higher Secondary School(12th)</span>
+              <h2>Shraddha Junior college</h2>
+              <span class="position"> TGBIE-Telangana</span>
+              <p class="mt-4">Course: PCM </p>
+              <p class="mt-4">Grade: First class distinction.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p>
+              <a href="https://drive.google.com/file/d/1HlrI8i1fQLFRvVyWhGp8VLLYN5Bdf0fj/view?usp=sharing" class="btn btn-primary py-4 px-5">Download Resume</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project1">
+        <h2>My Projects</h2>
+        
+        <div class="project-container" id="project-container">
+            <!-- Work Mate Project -->
+            <div class="project-card">
+                <button class="open-btn" onclick="window.open('#', '_blank')">OPEN</button>
+                <h3>Work-Mate (Full-Stack Development)</h3>
+                <p>Work-Mate is a full-stack web application designed to connect laborers with households and businesses in need of services like electricians, plumbers, carpenters, and other skilled workers. The platform ensures secure job matching, seamless payments, and user authentication, creating a reliable and efficient hiring experience.</p>
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>User Authentication:</strong> Implemented <strong>JWT & OAuth2.0</strong> for secure login and user verification.</li>
+                  <li><strong>Payment Integration:</strong> Integrated <strong>Razorpay</strong> for seamless transactions.</li>
+                  <li><strong>Wallet & Transaction Management:</strong> Users can <strong>track earnings and payments</strong> within the platform.</li>
+                 <li><strong>Get Update via mail:</strong> Users can <strong>get updates</strong>, about offers for relevant work <strong>and preferred labourers.</strong></li>
+                 <li><strong>Handles customer issue:</strong> Users can <strong>complaint about</strong>, our services at any time <strong>through website.</strong></li>
+                </ul>
+                <h4>💡 Tech Stack:</h4>
+                <div class="tech-stack">
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>PostgreSQL</span>
+                    <span>Redis</span>
+                    <span>Docker</span>
+                    
+                </div>
+     </div>
+           
+    
+            <!-- Alternative Routes Project -->
+            <div class="project-card">
+                <button class="open-btn" onclick="window.open('#', '_blank')">OPEN</button>
+                <h3>Alternative Routes Finder</h3>
+                <p>The Alternative Routes Finder is a route optimization system that helps users find the fastest and most efficient paths while considering real-time traffic conditions. By implementing graph-based shortest path algorithms, the system provides alternate routes to minimize travel time and avoid congestion.</p>
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Shortest Path Calculation:</strong> Implemented <strong>Dijkstra’s & A* algorithms</strong> for optimal route selection.</li>
+                  <li><strong>Traffic-Based Route Adjustment:</strong> Uses <strong>real-time data</strong> to recommend better paths.</li>
+                  <li><strong>Interactive Map Integration:</strong> Integrated <strong>Google Maps API</strong> for visual representation.</li>
+                  <li><strong>Optimized Database Queries:</strong> Stores & retrieves routes efficiently for fast performance.</li>
+                  <li><strong>Scalability & Efficiency:</strong> Designed for <strong>quick route computation</strong> in dynamic environments.</li>
+              </ul>
+          
+              <h4>💡 Tech Stack:</h4>
+              <div class="tech-stack">
+                  <span>C++</span>
+                  <span>Google Maps API</span>
+                  <span>Dijkstra’s Algorithm</span>
+                  <span>A* Algorithm</span>
+                  <span>PostgreSQL</span>
+              </div>
+            </div>
+    
+            <!-- Extra Projects (Hidden Initially) -->
+            <div class="project-card hidden" id="movie-project">
+                <button class="open-btn" onclick="window.open('https://movie-recommendation-ivory-mu.vercel.app/', '_blank')">OPEN</button>
+                <h3>Movie Recommendation System</h3>
+                <p>The Movie Recommendation System is a user-friendly web application that suggests movies based on user preferences. Built with HTML, CSS, JavaScript, and jQuery, it features an interactive and attractive UI for an enhanced user experience. Users can browse movie categories, view details, and get recommendations dynamically using smooth animations and AJAX-based fetching.</p>
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Personalized Recommendations:</strong> Uses **collaborative filtering** to suggest movies.</li>
+                  <li><strong>Content-Based Filtering:</strong> Analyzes movie genres, ratings, and user preferences.</li>
+                  <li><strong>Clean UI</strong> Easy to Understand and make a content watch decision</li>
+                  <li><strong>Used various Tech stacks</strong> To Make a Best experience for user i used multiple tech stacks</li>
+                  <li><strong>Interactive UI:</strong> Can be Integrate with AI to understand the user experience of user perfectly</li>
+              </ul>
+
+              <h4>💡 Tech Stack:</h4>
+    <div class="tech-stack">
+        <span>HTML5</span>
+        <span>CSS</span>
+        <span>Bootstrap</span>
+        <span>Javascript</span>
+        <span>JQuery</span>
+    </div>
+            </div>
+    
+            <div class="project-card hidden" id="ci-cd-project">
+                <button class="open-btn" onclick="window.open('https://your-deployment-link.com', '_blank')">OPEN</button>
+                <h3>CI/CD Pipeline for Web Application</h3>
+                <p>The CI/CD Pipeline for Web Application automates the building, testing, and deployment process to ensure efficient and reliable software releases. By implementing Continuous Integration (CI), code changes are automatically tested, while Continuous Deployment (CD) ensures smooth updates without downtime. This pipeline improves developer productivity, reduces manual errors, and accelerates delivery cycles.</p>
+                <h4>Key Features</h4>
+                <ul>
+                  <li><strong>Automated Deployment:</strong> Uses **GitHub Actions** to deploy on every commit.</li>
+                  <li><strong>Containerization:</strong> Dockerized the application for consistent execution across environments.</li>
+                  <li><strong>Kubernetes Orchestration:</strong> Managed scalable deployments using Kubernetes.</li>
+                  <li><strong>Cloud Hosting:</strong> Deployed on **AWS/GCP** for high availability.</li>
+                  <li><strong>Zero Downtime Deployment:</strong> Ensured smooth production updates with **rolling deployments**.</li>
+              </ul>
+          
+              <h4>💡 Tech Stack:</h4>
+              <div class="tech-stack">
+                  <span>GitHub Actions</span>
+                  <span>Docker</span>
+                  <span>Kubernetes</span>
+                  <span>Jenkins</span>
+                  <span>Node.js</span>
+              </div>
+            </div>
+        </div>
+    
+        <!-- See More & See Less Buttons -->
+        <button class="btn5" id="see-more-btn">See More Projects</button>
+        <button class="btn5 hidden" id="see-less-btn">See Less Projects</button>
+    </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="hid" style="visibility:hidden">
+        <div class="container">
+          <div class="row d-md-flex align-items-center">
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="300">0</strong>
+                  <span>Coding Problems solved</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+              <div class="block-18">
+                <div class="text">
+                  <strong class="number" data-number="160">0</strong>
+                  <span>Logical Math Problems</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="1000">0</strong> <span>Mentored Students</span> </div> </div> </div> <div class="col-md d-flex justify-content-center counter-wrap ftco-animate"> <div class="block-18"> <div class="text"> <strong class="number" data-number="500">0</strong> <span>Cups of coffee</span> </div> </div> </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <!-- <div class="container"> -->
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>Here's my<span>
+                <button id="gitbtn" class="btn btn-primary py-3 px-5" onclick="gitClick()">GitHub</button>
+              </span>
+            </h2>
+            <div class="heading">
+              <h4>
+                I love to code &amp; create awesome artworks.
+              </h4>
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </section>
+
+ <div class="contsam">
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Hyderabad, Telangana</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p>
+                <a href="tel://7470695586">+91 918-219-1974</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p>
+                <a href="mailto:devnathanurag7.com">mdsameeraliece@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Download Resume</h3>
+              <p>
+                <a href="https://drive.google.com/file/d/1HlrI8i1fQLFRvVyWhGp8VLLYN5Bdf0fj/view?usp=sharing">resumelink</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="container">
+            <br>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-md-7 ftco-animate text-center">
+                <h2>Have a<span>
+                    Question?
+                  </span>
+                </h2>
+                <div class="que" id="send-message">
+                  <form action="https://api.web3forms.com/submit" method="POST" onsubmit="clearForm(this)">
+                    <input type="hidden" name="access_key" value="58aa1a19-92a9-4349-84f4-c23c133bb9f3">
+                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                      <div class="col-12">
+                        <label for="fullname" class="form-label">Full Name
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="fullname" name="fullname" value="" required="required">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="email" class="form-label">Email
+                          <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewbox="0 0 16 16">
+                              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                          </span>
+                          <input type="email" class="form-control" id="email" name="email" value="" required="required">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewbox="0 0 16 16">
+                              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                          </span>
+                          <input type="tel" class="form-control" id="phone" name="phone" value="">
+                        </div>
+                      </div><br>
+                      <div class="col-12">
+                        <label for="subject" class="form-label">Subject
+                          <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="subject" name="subject" value="" required="required">
+                      </div>
+                      <div class="col-12">
+                        <label for="message" class="form-label">Message
+                          <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required="required"></textarea>
+                      </div>
+                      <div class="col-12">
+                        <div class="d-grid"><br>
+                          <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <br>
+            <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+              <li class="ftco-animate normal-txt">Find me on
+              </li>
+              <!-- <li class="ftco-animate"> <a href="https://www.youtube.com/@RishabhMishraOfficial"> <span class="icon-youtube"></span></a> </li> -->
+              <li class="ftco-animate">
+                <a href="https://www.linkedin.com/in/md-sameer-ali-1619062b8/">
+                  <span class="icon-linkedin"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="https://www.instagram.com/itsme___sam/">
+                  <span class="icon-twitter"></span></a>
+              </li>
+              <!-- <li class="ftco-animate"> <a href="https://twitter.com/rishabhnmishra"> <span class="icon-facebook"></span></a> </li> -->
+              <li class="ftco-animate">
+                <a href="https://www.instagram.com/itsme___sam/">
+                  <span class="icon-instagram"></span></a>
+              </li>
+            </ul>
+            <br>
+          </div>
+        </div>
+      </section>
+  </div>
+
+      <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+
+              <p style="display: none;">
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart color-danger" aria-hidden="true"></i>
+                by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+          <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg>
+      </div>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/scrollax.min.js"></script>
+
+      <script src="js/main.js"></script>
+      <script>
+        function gitClick() {
+          window.location.href = 'https://github.com/mdsameerali01';
+        }
+      </script>
+
+
+<script>
+  function clearForm(form) {
+    setTimeout(() => {
+      form.reset();
+    }, 1000); // Clears the form 1 second after submission
+  }
+</script>
+
+<script>
+  document.getElementById("see-more-btn").addEventListener("click", function() {
+      document.getElementById("movie-project").classList.remove("hidden");
+      document.getElementById("ci-cd-project").classList.remove("hidden");
+      document.getElementById("see-more-btn").classList.add("hidden");
+      document.getElementById("see-less-btn").classList.remove("hidden");
+  });
+
+  document.getElementById("see-less-btn").addEventListener("click", function() {
+      document.getElementById("movie-project").classList.add("hidden");
+      document.getElementById("ci-cd-project").classList.add("hidden");
+      document.getElementById("see-more-btn").classList.remove("hidden");
+      document.getElementById("see-less-btn").classList.add("hidden");
+  });
+</script>
+    </body>
+
+  </html>
