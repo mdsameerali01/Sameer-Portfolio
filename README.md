@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<a href="https://your-portfolio-link.com"><strong>🔗 Live Demo</strong></a>
+<a href="https://sameer-portfolio-pi.vercel.app/"><strong>🔗 Live Demo</strong></a>
 </p>
 
 ---
